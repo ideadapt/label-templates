@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        font: 12pt "Tahoma";
+    }
+
+    .page{
+        width: 29.7cm;
+        height: 20.9cm;
+        border: 1px solid red;
+    }
+    .row{
+        height: 9cm; // 21.1/2 = 10.5 - 1.5
+    }
+    .etikett{
+        width: 7.425cm;
+        height: 100%;
+        float: left;
+        padding-top: 1.5cm;
+        border: 0px solid green;
+    }
+    .etikett.last{
+        text-align: right;
+    }
+
+    @media print {
+        .page {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="page">
+    <div class="row">
+    <div class="etikett">content</div>
+    <div class="etikett">content</div>
+    <div class="etikett">content</div>
+    <div class="etikett last">content</div>
+    </div>
+    <div class="row">
+    <div class="etikett">content</div>
+    <div class="etikett">content</div>
+    <div class="etikett">content</div>
+    <div class="etikett last">content</div>
+    </div>
+</div>
+</body>
+</html>
