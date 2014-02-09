@@ -10,30 +10,26 @@ TOP = <<-TOP
         background-color: transparent;
         font: 10pt "Helvetica";
     }
-
     .page{
-        width: 29.7cm;
-        height: 20.9cm;
+        // normal 29.7*21.0, druckrand von 3 mm
+        // rechts und unten 0.3 abziehen.
+        width: 29.1cm;
+        height: 20.4cm;
         border: 1px solid transparent;
     }
-    .row{
-        height: 9cm;
-        padding-top: 0.2cm;
-        margin-top: 1.6cm;
-    }
     .etikett{
-        width: 7.425cm;
-        height: 100%;
+        width: 7.2cm; // 29.1/4 = 7.2...
+        height: 10cm;
         float: left;
         position: relative;
         border: 0px solid green;
     }
     .etikett>article{
     	padding: 0;
-    	padding-left: 0.3cm;
+    	padding-left: 0.5cm;
     	padding-right: 0.3cm;
     	text-align: justify;
-    	margin-top: -1.4cm;
+    	padding-top: 0.3cm;
     }
     .icon{
     	float: right;
@@ -61,7 +57,7 @@ TOP = <<-TOP
     }
     h1{
     	text-align: center;
-    	margin-top: 0.8cm;
+    	margin-top: 0.5cm;
     	font-size: 16pt;
     }
 </style>
@@ -98,14 +94,11 @@ EOF
 
 f = File.open('print.html', 'w:UTF-8')
 f.write(TOP)
-(1..2).each do |ri|
 
-	f.write('<div class="row">')
-	(1..4).each do |ci|
+	(1..8).each do |ci|
 		f.write("<div class=\"etikett\">#{CART}</div>")
 	end
-	f.write('</div>')
-end
+
 f.write(BOTTOM)
 f.close
 
