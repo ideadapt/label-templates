@@ -57,7 +57,7 @@ TOP = <<-TOP
     }
     h1{
     	text-align: center;
-    	margin-top: 0.5cm;
+    	margin-top: 0.3cm;
     	font-size: 16pt;
     }
 </style>
