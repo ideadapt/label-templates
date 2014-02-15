@@ -51,16 +51,34 @@ TOP = <<-TOP
     	width: 3cm;
     }
     .teaser{
-    	height: 3.2cm;
+    	height: 4.0cm;
     	overflow: hidden;
     }
     .teaser>img{
     	width: 100%;
     }
+    .teaser~p{
+    	margin-top: 0.2cm;
+    	margin-bottom: 0;
+    	padding-bottom: 0;
+    	padding-top: 0;
+    }
     h1{
     	text-align: center;
-    	margin-top: 0.3cm;
+    	margin-top: 0.1cm;
+    	margin-bottom: 0.1cm;
     	font-size: 16pt;
+    }
+    em+span{
+    	float: right;
+    	display: inline-block;
+    }
+    h1+small{
+    	display: inline-block;
+    	margin-bottom: 0.2cm;
+    	font-size: 8pt;
+    	text-align: center;
+    	width: 100%;
     }
 </style>
 </head>
@@ -79,10 +97,11 @@ CART = <<-EOF
 :header:
 </header>
 <h1>:h1:</h1>
+<small>Biologische Aufzucht von Floraritäten.</small>
 <div class="teaser">
 <img src="../:teaser:" />
 </div>
-<p><em>Schärfeskala: :hot: von 10+</em> :hot_postffix:</p>
+<p><em>Schärfeskala: :hot: von 10+</em><span>:hot_postffix:</span></p>
 :text:
 EOF
 
@@ -113,7 +132,7 @@ carts = [
 		h1: 'Chili Criolla Sella',
 		teaser: 'chili-criolla-sella.png',
 		hot: '8',
-		text: '<p>Reift schnell! Der Wuchs ist sehr verzweigt. Wuchshöhe 50 cm, Durch-messer ca. 50-70cm. Die leuchtend safrangelben Früchte haben einen wunderbar exotischfruchtigen Geschmack mit doch deutlicher Schärfe.</p>'
+		text: '<p>Reift schnell! Der Wuchs ist sehr verzweigt. Wuchshöhe 50 cm, Durch-messer ca. 50 - 70cm. Die leuchtend safrangelben Früchte haben einen wunderbar exotischfruchtigen Geschmack mit doch deutlicher Schärfe.</p>'
 	},
 	{
 		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
@@ -127,7 +146,7 @@ carts = [
 		h1: 'Chili Carribean Red',
 		teaser: 'chili-carribean-red.png',
 		hot: '10',
-		text: '<p>Stammt ursprünglich aus der Karibik und gehört zu den Habanero-Chilitypen. Sehr ertragreich, und wunderbar scharf mit einer fruchtigen Note. Die Farbe der Früchte wechselt zur Reife von hellgrün nach kräftig rot.</p>'
+		text: '<p>Stammt ursprünglich aus der Karibik und gehört zu den Habanero-Chilitypen. Sehr ertragreich, und wunderbar scharf mit einer fruchtigen Note. Die Farbe der Früchte wechselt zur Reife hin von hellgrün nach kräftig rot.</p>'
 	}
 ]
 
@@ -135,8 +154,8 @@ carts.each do |cart|
 	filename = cart[:h1].gsub(/\s+/, '-').downcase
 	hotness = cart[:hot].to_i
 	cat = 0
-	cat_index = [(0..5), (6..9),(10..10)].map{|r| cat += 1; r.include?(hotness) ? cat-1 : nil }.compact.first
-	hot_postffix = ['', 'scharf!', 'sehr scharf!'][cat_index]
+	cat_index = [(0..1), (2..5), (6..8),(9..10)].map{|r| cat += 1; r.include?(hotness) ? cat-1 : nil }.compact.first
+	hot_postffix = ['mild', 'scharf', 'scharf!', 'sehr scharf!'][cat_index]
 
 	dynamic_content = CART
 						.gsub(/:header:/, cart[:header])
@@ -149,7 +168,7 @@ carts.each do |cart|
 	f = File.open('./out/tmp.html', 'w:UTF-8')
 	f.write(TOP)
 	(1..8).each do |ci|
-		f.write("<div class=\"etikett\"><article><header><img src=\"../logo.png\" class=\"logo\" />#{dynamic_content}<footer><p>Biologische Aufzucht von Floraritäten.</p></footer></article></div>")
+		f.write("<div class=\"etikett\"><article><header><img src=\"../logo.png\" class=\"logo\" />#{dynamic_content}</article></div>")
 	end
 	f.write(BOTTOM)
 	f.close
