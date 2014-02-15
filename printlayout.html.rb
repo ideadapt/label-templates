@@ -80,7 +80,7 @@ CART = <<-EOF
 </header>
 <h1>:h1:</h1>
 <div class="teaser">
-<img src=":teaser:" />
+<img src="../:teaser:" />
 </div>
 <p><em>Schärfeskala: :hot: von 10+</em> :hot_postffix:</p>
 :text:
@@ -88,42 +88,42 @@ EOF
 
 carts = [
 	{
-		header: '<img src="icon-sun.png" class="icon sun" /><img src="icon-can-34.png" class="icon can" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
 		h1: 'Chili Mustard Habanero',
 		teaser: 'chili-mustard-habanero.png',
 		hot: '9',
 		text: '<p>Diese produktiven Pflanzen tragen viele Früchte, welche von hellgrün mit einem Hauch von purpur über senfgelborange bis zu einem leuchtenden orange ausreifen.</p><p>In durchlässige Erde pflanzen.</p>'
 	},
 	{
-		header: '<img src="icon-sun.png" class="icon sun" /><img src="icon-can-34.png" class="icon can" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
 		h1: 'Chili Orange Habanero',
 		teaser: 'chili-orange-habanero.png',
 		hot: '10',
 		text: '<p>Sie produziert eine große Zahl an Blüten und Früchten. Der Geschmack ist sehr aromatisch und erinnert stark an Aprikosen, verliert sich aber beim Trocknen etwas. Die Farbe wechselt von dunkel grün nach orange. Höhe -70 cm, Breite -65 cm!</p>'
 	},
 	{
-		header: '<img src="icon-sun.png" class="icon sun" /><img src="icon-can-34.png" class="icon can" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
 		h1: 'Paprika Hot Fire',
 		teaser: 'paprika-hot-fire.png',
 		hot: '9',
 		text: '<p>Die Pflanzen bleiben gedrungen und kompakt und bilden kleine, schön geformte Früchte, die von orange-rot bis gelb abreifen. In geringen Mengen verwendet, verleihen sie jedem Gericht eine angenehme und einzigartige exotische Schärfe.</p>'
 	},
 	{
-		header: '<img src="icon-sun.png" class="icon sun" /><img src="icon-can-34.png" class="icon can" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
 		h1: 'Chili Criolla Sella',
 		teaser: 'chili-criolla-sella.png',
 		hot: '8',
 		text: '<p>Reift schnell! Der Wuchs ist sehr verzweigt. Wuchshöhe 50 cm, Durch-messer ca. 50-70cm. Die leuchtend safrangelben Früchte haben einen wunderbar exotischfruchtigen Geschmack mit doch deutlicher Schärfe.</p>'
 	},
 	{
-		header: '<img src="icon-sun.png" class="icon sun" /><img src="icon-can-34.png" class="icon can" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
 		h1: 'Violette Peperoni',
 		teaser: 'violette-peperoni.png',
 		hot: '0',
 		text: '<p>Ideal für Topfkultur oder Gewächshaus. Die dickwandigen kleinen Blockfrüchte sind aromatisch und saftig, eine farbliche und kulinarische Bereicherung.</p>'
 	},
 	{
-		header: '<img src="icon-sun.png" class="icon sun" /><img src="icon-can-34.png" class="icon can" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
 		h1: 'Chili Carribean Red',
 		teaser: 'chili-carribean-red.png',
 		hot: '10',
@@ -149,13 +149,13 @@ carts.each do |cart|
 	f = File.open('./out/tmp.html', 'w:UTF-8')
 	f.write(TOP)
 	(1..8).each do |ci|
-		f.write("<div class=\"etikett\"><article><header><img src=\"logo.png\" class=\"logo\" />#{dynamic_content}<footer><p>Biologische Aufzucht von Floraritäten.</p></footer></article></div>")
+		f.write("<div class=\"etikett\"><article><header><img src=\"../logo.png\" class=\"logo\" />#{dynamic_content}<footer><p>Biologische Aufzucht von Floraritäten.</p></footer></article></div>")
 	end
 	f.write(BOTTOM)
 	f.close
 
 	`wkhtmltopdf -O landscape -s A4 -B 0 -R 0 -L 0 -T 0 ./out/tmp.html ./out/#{filename}.pdf`
-	`open #{filename}.pdf`
+	`open ./out/#{filename}.pdf`
 end
 
 
