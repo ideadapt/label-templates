@@ -6,6 +6,7 @@ TOP = <<-TOP
 <style>
     body {
         margin: 0;
+        margin-top: 0.25cm;
         padding: 0;
         background-color: transparent;
         font: 10pt "Helvetica";
@@ -15,12 +16,12 @@ TOP = <<-TOP
         / rechts und unten 0.3 abziehen.
         */
         width: 29.1cm;
-        height: 20.4cm;
+        height: 20.15cm;
         border: 1px solid transparent;
     }
     .etikett{
         width: 7.2cm; /* 29.1/4 = 7.2... */
-        height: 10.2cm;
+        height: 10.075cm;
         float: left;
         position: relative;
         border: 0px solid green;
@@ -126,7 +127,7 @@ carts = [
 		h1: 'Chili Carribean Red',
 		teaser: 'chili-carribean-red.png',
 		hot: '10',
-		text: '<p>stammt ursprünglich aus der Karibik und gehört zu den Habanero-Chilitypen. Sehr ertragreich, und wunderbar scharf mit einer fruchtigen Not. Die Farbe der Früchte wechselt zur Reife von hellgrün nach kräftig rot.</p>'
+		text: '<p>Stammt ursprünglich aus der Karibik und gehört zu den Habanero-Chilitypen. Sehr ertragreich, und wunderbar scharf mit einer fruchtigen Note. Die Farbe der Früchte wechselt zur Reife von hellgrün nach kräftig rot.</p>'
 	}
 ]
 
@@ -145,7 +146,7 @@ carts.each do |cart|
 						.gsub(/:hot:/, cart[:hot])
 						.gsub(/:text:/, cart[:text])
 
-	f = File.open('tmp.html', 'w:UTF-8')
+	f = File.open('./out/tmp.html', 'w:UTF-8')
 	f.write(TOP)
 	(1..8).each do |ci|
 		f.write("<div class=\"etikett\"><article><header><img src=\"logo.png\" class=\"logo\" />#{dynamic_content}<footer><p>Biologische Aufzucht von Floraritäten.</p></footer></article></div>")
@@ -153,7 +154,7 @@ carts.each do |cart|
 	f.write(BOTTOM)
 	f.close
 
-	`wkhtmltopdf -O landscape -s A4 -B 0 -R 0 -L 0 -T 0 tmp.html #{filename}.pdf`
+	`wkhtmltopdf -O landscape -s A4 -B 0 -R 0 -L 0 -T 0 ./out/tmp.html ./out/#{filename}.pdf`
 	`open #{filename}.pdf`
 end
 
