@@ -192,7 +192,7 @@ carts.each do |cart|
 	f.write(BOTTOM)
 	f.close
 
-	`exec wkhtmltopdf -O landscape -s A4 -B 4.2mm -R 4.2mm -L 4.2mm -T 4.2mm ./out/tmp.html ./out/#{filename}.pdf; exit;`
+	`exec wkhtmltopdf -O landscape -s A4 -B 4.2mm -R 4.2mm -L 4.5mm -T 4.2mm ./out/tmp.html ./out/#{filename}.pdf; exit;`
 	`open ./out/#{filename}.pdf`
 end
 
