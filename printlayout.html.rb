@@ -4,34 +4,48 @@ TOP = <<-TOP
 <head>
 <meta charset="UTF-8" />
 <style>
+	* {
+		box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		border: 0;
+	}
+
     body {
-        margin: 0;
-        margin-top: 0.25cm;
-        padding: 0;
-        background-color: transparent;
+    	margin: 0;
+    	padding: 0;
         font: 10pt "Helvetica";
     }
     .page{
-        /* normal 29.7*21.0, druckrand von 3 mm
-        / rechts und unten 0.3 abziehen.
-        */
-        width: 29.1cm;
-        height: 20.15cm;
-        border: 1px solid transparent;
+		margin: 0;
+		width: 28.85cm;
+    	height: 20cm;
+        /*width: 28.86cm;
+        height: 20.16cm;*/
     }
     .etikett{
-        width: 7.2cm; /* 29.1/4 = 7.2... */
-        height: 10.075cm;
+        width: 6.58cm; /*  */
+        height: 10cm;
+        margin: 0;
+        padding: 0;
+        padding-left: 4.2mm;
+        padding-right: 4.2mm;
         float: left;
         position: relative;
         border: 0px solid green;
     }
+    .etikett.alpha{
+    	padding-left: 0;
+    }
+    .etikett.omega{
+    	padding-right: 0;
+    }
     .etikett>article{
     	padding: 0;
-    	padding-left: 0.5cm;
-    	padding-right: 0.3cm;
+    	margin: 0;
     	text-align: justify;
-    	padding-top: 0.3cm;
+    }
+    .row-2.etikett>article{
+    	padding-top: 4.2mm;
     }
     .icon{
     	float: right;
@@ -168,12 +182,17 @@ carts.each do |cart|
 	f = File.open('./out/tmp.html', 'w:UTF-8')
 	f.write(TOP)
 	(1..8).each do |ci|
-		f.write("<div class=\"etikett\"><article><header><img src=\"../logo.png\" class=\"logo\" />#{dynamic_content}</article></div>")
+		colClass = []
+		colClass << 'alpha' if ci%4 == 1
+		colClass << 'omega' if ci%4 == 0
+		colClass << 'row-2' if ci>4
+		f.write("<div class=\"etikett #{colClass.join(' ')}\"><article><header><img src=\"../logo.png\" class=\"logo\" />#{dynamic_content}</article></div>")
 	end
+
 	f.write(BOTTOM)
 	f.close
 
-	`wkhtmltopdf -O landscape -s A4 -B 0 -R 0 -L 0 -T 0 ./out/tmp.html ./out/#{filename}.pdf`
+	`exec wkhtmltopdf -O landscape -s A4 -B 4.2mm -R 4.2mm -L 4.2mm -T 4.2mm ./out/tmp.html ./out/#{filename}.pdf; exit;`
 	`open ./out/#{filename}.pdf`
 end
 
