@@ -9,6 +9,10 @@ TOP = <<-TOP
 		-webkit-box-sizing: content-box;
 		border: 0;
 	}
+	.hidden{
+		display: none;
+		visibility: hidden;
+	}
 
     body {
     	margin: 0;
@@ -115,7 +119,7 @@ CART = <<-EOF
 <div class="teaser">
 <img src="../:teaser:" />
 </div>
-<p><em>Schärfeskala: :hot: von 10+</em><span>:hot_postffix:</span></p>
+<p class=":hot_css_class:"><em>Schärfeskala: :hot: von 10+</em><span>:hot_postffix:</span></p>
 :text:
 EOF
 
@@ -161,23 +165,89 @@ carts = [
 		teaser: 'chili-carribean-red.png',
 		hot: '10',
 		text: '<p>Stammt ursprünglich aus der Karibik und gehört zu den Habanero-Chilitypen. Sehr ertragreich, und wunderbar scharf mit einer fruchtigen Note. Die Farbe der Früchte wechselt zur Reife hin von hellgrün nach kräftig rot.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Chili chilaca',
+		teaser: 'chili-chilaca.png',
+		hot: '3',
+		text: '<p>Hat einen reichen, leicht scharfen, rauchigen Geschmack. Die Früchte reifen von dunkelgrün zu dunkelbraun ab. Die Früchte sind 15cm bis 30cm lang und 3 bis 4cm breit. Von der Form her länglich und leicht unregelmäßig.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Chili Red Cap Mushroom',
+		teaser: 'chili-red-cap-mushroom.png',
+		hot: '4',
+		text: '<p>Diese kuriose Chili trägt abgeflachte glockenförmige Früchte, welche von hellgrün zu leuchtend rot ausreifen. Schönes, scharf-fruchtiges Aroma, ideal zum Einlegen oder Trocknen. Ein echter Hingucker!</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Chili Thai Hot',
+		teaser: 'chili-thai-hot.png',
+		hot: '8',
+		text: '<p>Thai Hot ist eine stark verzweigte Sorte, und trägt bis zu 150 Schoten pro Pflanze! Höhe: 60 bis 70cm. Früchte: bis 9cm lang. Sie eignen sich hervorragend zum trocknen. Die Farbe verläuft zur Reife von einem mittleren grün zu dunkelrot.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Chili Bhut Jolikia',
+		teaser: 'chili-bhut-jolikia.png',
+		hot: '10+',
+		text: '<p>Auch Geister-Chili genannt. Sie stammt aus Nordindien und wurde 2006 als die schärfste Chili der Welt ins Guinness-Buch der Rekorde aufgenommen. Hat über eine Million Scoville!!! Grün oder rot ernten und nur ganz wenig verwenden!!!</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Chili Balloonpepper',
+		teaser: 'chili-balloonpepper.png',
+		hot: '7',
+		text: '<p>Einzelne glockenförmige Früchte, mit 3 oder 4 flachen Flügeln. Das Fleisch ist schmackhaft, knackig und süß, aber die Samen und Plazenta sind extrem scharf. In durchlässige Erde pflanzen.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Cherry Zuckertraube',
+		teaser: 'cherry-zuckertraube.png',
+		text: '<p>Kleine, aromatische Delikatesse für den regengeschützten Anbau. Sie hat lange Trauben und einen starken Wuchs. Kann auch mehrtriebig gezogen werden. Sehr hoher und früher Ertrag. Geeignet für den Garten und Kübelanbau. Gezogen aus Demeter Samen.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Aubergine Striped Toga',
+		teaser: 'aubergine-striped-toga.png',
+		text: '<p>Exotisch anmutende, gestreifte Aubergine. Diese kuriose Aubeginensorte wechselt zur Reife ihre Farbe von verschiedenen Grüntönen zu einem leuchtenden Orange mit grünen Flammen. Aromatische 8cm lange Früchte, und nicht bitter.</p>'
 	}
 ]
 
-carts.each do |cart|
+start_index = 0
+ARGV.each do |arg|
+	name, value = arg.split('=')
+	if name == '-start'
+		start_index = value.to_i
+		start_index = carts.length + start_index if start_index < 0
+	end
+end
+puts "Starting at #{start_index+1} out of #{carts.length}"
+
+carts.each_with_index do |cart, i|
+	next if i < start_index
+
 	filename = cart[:h1].gsub(/\s+/, '-').downcase
-	hotness = cart[:hot][0..1].to_i
-	cat = 0
-	cat_index = [(0..1), (2..4), (5..7),(8..8), (9..10)].map{|r| cat += 1; r.include?(hotness) ? cat-1 : nil }.compact.first
-	hot_postffix = ['mild', 'pikant', 'scharf', 'sehr scharf!!', 'sehr scharf!!!'][cat_index]
 
 	dynamic_content = CART
 						.gsub(/:header:/, cart[:header])
-						.gsub(/:hot_postffix:/, hot_postffix)
 						.gsub(/:h1:/, cart[:h1])
 						.gsub(/:teaser:/, cart[:teaser])
-						.gsub(/:hot:/, cart[:hot])
 						.gsub(/:text:/, cart[:text])
+	if cart[:hot]
+		hotness = cart[:hot][0..1].to_i
+		cat = 0
+		cat_index = [(0..1), (2..4), (5..7),(8..8), (9..10)].map{|r| cat += 1; r.include?(hotness) ? cat-1 : nil }.compact.first
+		hot_postffix = ['mild', 'pikant', 'scharf', 'sehr scharf!!', 'sehr scharf!!!'][cat_index]
+
+		dynamic_content
+						.gsub!(/:hot_postffix:/, hot_postffix)
+						.gsub!(/:hot:/, cart[:hot])
+						.gsub!(/:hot_css_class:/, '')
+	else
+		dynamic_content.gsub!(/:hot_css_class:/, 'hidden')
+	end
 
 	f = File.open('./out/tmp.html', 'w:UTF-8')
 	f.write(TOP)
@@ -192,7 +262,9 @@ carts.each do |cart|
 	f.write(BOTTOM)
 	f.close
 
-	`exec wkhtmltopdf -O landscape -s A4 -B 4.2mm -R 4.2mm -L 4.5mm -T 4.2mm ./out/tmp.html ./out/#{filename}.pdf; exit;`
+	puts "Generating #{filename}.pdf"
+	`wkhtmltopdf --quiet -O landscape -s A4 -B 4.2mm -R 4.2mm -L 4.5mm -T 4.2mm ./out/tmp.html ./out/#{filename}.pdf`
+
 	`open ./out/#{filename}.pdf`
 end
 
