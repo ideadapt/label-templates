@@ -166,10 +166,10 @@ carts = [
 
 carts.each do |cart|
 	filename = cart[:h1].gsub(/\s+/, '-').downcase
-	hotness = cart[:hot].to_i
+	hotness = cart[:hot][0..1].to_i
 	cat = 0
-	cat_index = [(0..1), (2..5), (6..8),(9..10)].map{|r| cat += 1; r.include?(hotness) ? cat-1 : nil }.compact.first
-	hot_postffix = ['mild', 'scharf', 'scharf!', 'sehr scharf!'][cat_index]
+	cat_index = [(0..1), (2..4), (5..7),(8..8), (9..10)].map{|r| cat += 1; r.include?(hotness) ? cat-1 : nil }.compact.first
+	hot_postffix = ['mild', 'pikant', 'scharf', 'sehr scharf!!', 'sehr scharf!!!'][cat_index]
 
 	dynamic_content = CART
 						.gsub(/:header:/, cart[:header])
