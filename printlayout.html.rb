@@ -61,6 +61,9 @@ TOP = <<-TOP
     .icon.sun{
     	width: 0.75cm;
     }
+    .icon.psr{
+    	width: 0.75cm;
+    }
     em{
     	font-weight: bold;
     	font-style: normal;
@@ -154,13 +157,6 @@ carts = [
 	},
 	{
 		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
-		h1: 'Violette Peperoni',
-		teaser: 'violette-peperoni.png',
-		hot: '0',
-		text: '<p>Ideal für Topfkultur oder Gewächshaus. Die dickwandigen kleinen Blockfrüchte sind aromatisch und saftig, eine farbliche und kulinarische Bereicherung.</p>'
-	},
-	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
 		h1: 'Chili Carribean Red',
 		teaser: 'chili-carribean-red.png',
 		hot: '10',
@@ -203,6 +199,13 @@ carts = [
 	},
 	{
 		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Violette Peperoni',
+		teaser: 'violette-peperoni.png',
+		hot: '0',
+		text: '<p>Ideal für Topfkultur oder Gewächshaus. Die dickwandigen kleinen Blockfrüchte sind aromatisch und saftig, eine farbliche und kulinarische Bereicherung.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
 		h1: 'Cherry Zuckertraube',
 		teaser: 'cherry-zuckertraube.png',
 		text: '<p>Kleine, aromatische Delikatesse für den regengeschützten Anbau. Sie hat lange Trauben und einen starken Wuchs. Kann auch mehrtriebig gezogen werden. Sehr hoher und früher Ertrag. Geeignet für den Garten und Kübelanbau. Gezogen aus Demeter Samen.</p>'
@@ -212,8 +215,109 @@ carts = [
 		h1: 'Aubergine Striped Toga',
 		teaser: 'aubergine-striped-toga.png',
 		text: '<p>Exotisch anmutende, gestreifte Aubergine. Diese kuriose Aubeginensorte wechselt zur Reife ihre Farbe von verschiedenen Grüntönen zu einem leuchtenden Orange mit grünen Flammen. Aromatische 8cm lange Früchte, und nicht bitter.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Tomate Costoluto Genovese',
+		teaser: 'tomate-costoluto-genovese.png',
+		text: '<p>Eine der empfehlensertesten roten Fleischtomaten mit einem würzigen Aroma. Ein Massenträger der Sonderklasse. Die roten, großen Fleischtomaten sind gerippt und schmecken hervorragend. Ideal für Pastasaucen. Sie trägt volle Trauben an saftigen Früchten von bester Qualität. Relativ frühe Reife für ihre Grösse.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Datteltomate Rosalita',
+		teaser: 'datteltomate-rosalita.png',
+		text: '<p>Die einzig uns bekannte pinke Traubensorte. Sehr reichtragende und wüchsige Pflanze mit ovalen rosa-pinken Früchtchen. Rosalita ist eine bereichernde neue Wahl für alle, die Datteltomaten lieben! Ernte August bis Oktober.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Datteltomate',
+		teaser: 'datteltomate.png',
+		text: '<p>Klein, aber fein! Datteltomaten gehören zu den schmackhaftesten im Tomaten-Sortiment. Manche nennen sie wegen ihrer länglichen Form, auch \'Küsschen-Tomaten\'. Die ca. 150 cm hohen Pflanzen tragen viele dicht mit Früchten besetzte lange Trauben und bringen hohen Ertrag.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Chili Naga Jolokia',
+		hot: '10+',
+		teaser: 'chili-naga-jolokia.png',
+		text: '<p>Die schärfste Chilli der Welt mit einer Million Scoville Grad. Der Chilli \'Naga Jolokia\' wird in Indien kulitviert. Diese Chillifrüchte sind hellgrün und färben sich je nach Reifegrad ins orangerot. In durchlässige Erde pflanzen.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Pepper Beaver Dam',
+		hot: '1',
+		teaser: 'pepper-beaver-dam.png',
+		text: '<p>Die konusförmigen Früchte sind ca. 8-11 cm und im Durchmesser ca. 5-6 cm lang. Sie sind 90-140 Gramm schwer und reifen sehr schön von grün über gelblich nach rot ab Sie sind knackig und von einer angenehmen milden Schärfe. In durch-lässige Erde pflanzen.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Pepper Golden Treasure',
+		hot: '0',
+		teaser: 'pepper-golden-treasure.png',
+		text: '<p>Diese Paprika-Pflanze liefert enorme Mengen länglicher, gelb abreifender Paprikas. Die Früchte sind unheimlich aromatisch und süss. Zum Einlegen, grillen, in Gemüsegerichten, in Fleisch-gerichten und Salat.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
+		h1: 'Reisetomate',
+		teaser: 'reisetomate.png',
+		text: '<p>Historische Indianer-Tomate, deren verschachtelte Früchte sich in einzelne Segmente (Teifrüchte) teilen lassen, ohne dass dabei Saft oder Samen austritt. Gut für auf Reisen! Rarität! Diese Reise-Tomate zeichnet sich durch saftig-aromatische Früchte aus.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Pineapple',
+		teaser: 'tomate-pineapple.png',
+		text: '<p>Eine wahre Delikatesse! Diese 2 farbig gestreifte Tomate trägt große, schwere saftige Früchte mit fruchtig süßem Geschmack. Wenn man sie aufschneidet, ähnelt sie im Innern einem psychodelischen Strudel in rot gelb gold und pink!</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Tomate Cherokee Purple',
+		teaser: 'tomate-cherokee-purple.png',
+		text: '<p>Reichtragende Pflanzen mit 300 - 350 Gramm schweren, großen, flachrunden und  leicht gerippten, braunroten Früchten mit einem feinen, würzigen Tomaten-geschmack. Geschmacklich sehr gut, extrem süss und saftig. Mittelgroße Pflanze (bis 1,5 m) mit sehr frühem Erntebeginn ab Ende Juli.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Tomate Goliath',
+		teaser: 'tomate-goliath.png',
+		text: '<p>Gigantische Früchte! Die dunkelrosa- farbigen, faltigen Früchte sind sehr süss, mit einer feinen Säurekomponente. Dies ergibt einen angenehmen guten Ge-schmack. Die meisten Früchte wiegen zwischen 500 und1000 Gramm, aber es ist nicht ungewöhnlich auch mal eine Mammutausgabe von 1,4 Kg zu ernten.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Tomate Green Zebra',
+		teaser: 'tomate-green-zebra.png',
+		text: '<p>Sehr geschmackvolle Früchte, die hell- und dunkelgrün gestreift sind. Die Früchte werden bei der Reife gelblich. Stark wachsende Pflanzen. Ihr Geschmack wird als hervorragend ausgeglichen mit einem eher niedrigen Säuregehalt beschrieben. Die Früchte sind mittelgross und wiegen zwischen 80 und 120 Gramm. Eine wahre Delikatesse!</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Tomate Hillbilly',
+		teaser: 'tomate-hillbilly.png',
+		text: '<p>Absolute Schönheit unter den Tomaten! Für Salate und kalte Platten optimal. Die schönen gelben Früchte sind rot gestreift am unteren Ende und werden um die 300 Gramm schwer. Sie sind herrlich süss und saftig.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
+		h1: 'Tomate Ochsenherz',
+		teaser: 'tomate-ochsenherz.png',
+		text: '<p>Die Fleischtomate Ochsenherz ist eine sehr große und aromatische Sorte. Die Früchte werden sehr groß, bis zu 500 g schwer, sind stark gerippt, sehr fleischig und ähneln teilweise einem Ochsen-herzen.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Tomate Red Target',
+		teaser: 'tomate-red-target.png',
+		text: '<p>Die Früchte werden des guten Geschmackes geerntet, sobald die dunkelgrüne Haut sich unten rot zu verfärben beginnt; nicht wenn sie voll ausgereift / rot sind. \'Red Target\' bringt grosse Pflanzen hervor mit reichlicher Ernte.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Tomate Russisch Orange',
+		teaser: 'tomate-russisch-orange.png',
+		text: '<p>Die Russische Orange ist eine zweifarbige Ochsenherz-Tomate, und zeigt die besten Eigenschaften beider Arten. Trägt herzförmige Früchte mit einem Gewicht von bis zu 230 Gramm. Sie ist wunderschön marmoriert mit roten Farbstreifen und schmeckt köstlich süss und fruchtig im Geschmack.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
+		h1: 'Tomate Zürcher Original',
+		teaser: 'tomate-zuercher-original.png',
+		text: '<p>Die Russische Orange ist eine zweifarbige Ochsenherz-Tomate, und zeigt die besten Eigenschaften beider Arten. Trägt herzförmige Früchte mit einem Gewicht von bis zu 230 Gramm. Sie ist wunderschön marmoriert mit roten Farbstreifen und schmeckt köstlich süss und fruchtig im Geschmack.</p>'
 	}
 ]
+
+# tomaten , zuccetti, gurken, kürbis
 
 start_index = 0
 ARGV.each do |arg|
