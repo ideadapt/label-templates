@@ -64,6 +64,9 @@ TOP = <<-TOP
     .icon.psr{
     	width: 0.75cm;
     }
+    .icon.bio{
+    	width: 0.75cm;
+    }
     em{
     	font-weight: bold;
     	font-style: normal;
@@ -328,7 +331,7 @@ carts = [
 		text: '<p>Saftige, wohlschmeckende, süsse rote Früchte mit Längsstreifen. Diese Sorte gehört zu den schönsten Sorten der Welt. Die Früchte sind von einem dunklen rot-braun mit grünen Streifen. Die runden, abgeflachten Früchte werden bis 200 Gramm schwer, gut lagerfähig.<br/>Gezogen aus Demeter Samen.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can bio" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-bio.jpeg" class="icon bio" />',
 		h1: 'Tomate Sibirische Frühe',
 		teaser: 'tomate-sibirische-fruehe.png',
 		text: '<p>Die Tomate, die aus der Kälte kommt und bereits Ende Juni reift und auch auf dem Balkon gedeiht. Die Grösse der Frucht variiert von klein bis mittel. Das Fruchtfleisch ist fest und sehr aromatisch. Kann gut im Topf kultiviert werden.</p>'
