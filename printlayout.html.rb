@@ -220,7 +220,7 @@ carts = [
 		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
 		h1: 'Tomate Costoluto Genovese',
 		teaser: 'tomate-costoluto-genovese.png',
-		text: '<p>Eine der empfehlensertesten roten Fleischtomaten mit einem würzigen Aroma. Ein Massenträger der Sonderklasse. Die roten, großen Fleischtomaten sind gerippt und schmecken hervorragend. Ideal für Pastasaucen. Sie trägt volle Trauben an saftigen Früchten von bester Qualität. Relativ frühe Reife für ihre Grösse.</p>'
+		text: '<p>Eine der empfehlensertesten roten Fleischtomaten mit einem würzigen Aroma. Ein Massenträger der Sonder- klasse. Die roten, großen Fleischtomaten sind gerippt und schmecken hervorragend. Ideal für Pastasaucen. Sie trägt volle Trauben an saftigen Früchten von bester Qualität. Relativ frühe Reife für ihre Grösse.</p>'
 	},
 	{
 		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
@@ -280,7 +280,7 @@ carts = [
 		text: '<p>Gigantische Früchte! Die dunkelrosa- farbigen, faltigen Früchte sind sehr süss, mit einer feinen Säurekomponente. Dies ergibt einen angenehmen guten Ge-schmack. Die meisten Früchte wiegen zwischen 500 und1000 Gramm, aber es ist nicht ungewöhnlich auch mal eine Mammutausgabe von 1,4 Kg zu ernten.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
 		h1: 'Tomate Green Zebra',
 		teaser: 'tomate-green-zebra.png',
 		text: '<p>Sehr geschmackvolle Früchte, die hell- und dunkelgrün gestreift sind. Die Früchte werden bei der Reife gelblich. Stark wachsende Pflanzen. Ihr Geschmack wird als hervorragend ausgeglichen mit einem eher niedrigen Säuregehalt beschrieben. Die Früchte sind mittelgross und wiegen zwischen 80 und 120 Gramm. Eine wahre Delikatesse!</p>'
@@ -313,7 +313,43 @@ carts = [
 		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
 		h1: 'Tomate Zürcher Original',
 		teaser: 'tomate-zuercher-original.png',
-		text: '<p>Die Russische Orange ist eine zweifarbige Ochsenherz-Tomate, und zeigt die besten Eigenschaften beider Arten. Trägt herzförmige Früchte mit einem Gewicht von bis zu 230 Gramm. Sie ist wunderschön marmoriert mit roten Farbstreifen und schmeckt köstlich süss und fruchtig im Geschmack.</p>'
+		text: '<p>Rote Fleischtomate, flachrund, gerippt, fest, guter Geschmack und vollfleischig Erinnert im Querschnitt oft an ein Kleeblatt.</p><p>Ernte: Juli bis September.<br/>Gezogen aus Demeter Samen.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
+		h1: 'Jap. Trifele Black Tomato',
+		teaser: 'tomate-trifele-black.png',
+		text: '<p>Eine der besten russischen, schwarzen Tomaten. Erwarten Sie eine grosse Ernte der birnenförmigen Früchte mit reichem vollem Geschmack.</p><p>Kartoffelblättrige Sorte mit 100 bis 150 Gramm schweren Früchten. Erntezeit Juli bis Oktober.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Tomate Black Zebra',
+		teaser: 'tomate-black-zebra.png',
+		text: '<p>Saftige, wohlschmeckende, süsse rote Früchte mit Längsstreifen. Diese Sorte gehört zu den schönsten Sorten der Welt. Die Früchte sind von einem dunklen rot-braun mit grünen Streifen. Die runden, abgeflachten Früchte werden bis 200 Gramm schwer, gut lagerfähig.<br/>Gezogen aus Demeter Samen.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can bio" />',
+		h1: 'Tomate Sibirische Frühe',
+		teaser: 'tomate-sibirische-fruehe.png',
+		text: '<p>Die Tomate, die aus der Kälte kommt und bereits Ende Juni reift und auch auf dem Balkon gedeiht. Die Grösse der Frucht variiert von klein bis mittel. Das Fruchtfleisch ist fest und sehr aromatisch. Kann gut im Topf kultiviert werden.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Tomate Indigo Rose',
+		teaser: 'tomate-indigo-rose.png',
+		text: '<p>Die sonnenabgewandte Seite ist anfänglich grün und färbt sich während der Reife hin nach rot. Erhält an der sonnenzugewandten Seite eine indigoblaue Farbe. Das Tomatenfleisch selbst hat einen roten Farbton. Ertrag sehr produktiv. Sie hat einen guten Geschmack und die Pflanzen sind robust und resistent.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		h1: 'Tomate Berner Rose',
+		teaser: 'tomate-berner-rose.png',
+		text: '<p>Späte, fleischige und schmackhafte, leicht süsse Früchte. Viel Tomatenaroma. Die Früchte sind rosarot und saftig-weich. Ihre Fruchtform ist uneinheitlich, mal groß wie eine Fleischtomate, mal klein wie eine normale Obsttomate. Eine der besten Tomaten!<br/>Gezogen aus Demeter Samen.</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Gemüsepaprika Szegediner',
+		teaser: 'paprika-szegediner.png',
+		text: '<p>Sehr grossfruchtiger, fleischiger und milder Gemüsepaprika. Für unsere Verhältnisse gezüchtet. Bringt hohe Erträge bei sehr gutem Geschmack.</p><p>Pflanzzeit: Mai bis Juni<br/>Erntezeit: August bis November</p>'
 	}
 ]
 
