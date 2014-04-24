@@ -353,6 +353,12 @@ carts = [
 		h1: 'Gemüsepaprika Szegediner',
 		teaser: 'paprika-szegediner.png',
 		text: '<p>Sehr grossfruchtiger, fleischiger und milder Gemüsepaprika. Für unsere Verhältnisse gezüchtet. Bringt hohe Erträge bei sehr gutem Geschmack.</p><p>Pflanzzeit: Mai bis Juni<br/>Erntezeit: August bis November</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Aubergine Pingtung Long',
+		teaser: 'aubergine-pingtung-long.png',
+		text: '<p>Sehr schöne Aubergine die aus der Stadt Pingtung in Taiwan stammt. Die schlanken Früchte werden mindestens 30 cm lang und haben einen herrlich milden Geschmack und zartes Fruchtfleisch. Die Pflanze ist sehr kraftvoll und krankheits- resistent. Eine fantastische Aubergine, nicht nur für die orientalische Küche!</p>'
 	}
 ]
 
