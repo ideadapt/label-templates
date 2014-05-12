@@ -109,12 +109,10 @@ TOP = <<-TOP
     	float: right;
     	display: inline-block;
     }
-    h1+small{
-    	display: inline-block;
+    small{
+    	padding-left: 1mm;
     	margin-bottom: 0.2cm;
     	font-size: 6pt;
-    	text-align: center;
-    	width: 100%;
     }
 </style>
 </head>
@@ -131,9 +129,9 @@ EOF
 
 CART = <<-EOF
 :header:
+<small>Biologische Aufzucht</small>
 </header>
 <h1>:h1:</h1>
-<small>Biologische Aufzucht von Floraritäten.</small>
 <div class="teaser">
 <img src="../:teaser:" />
 </div>
