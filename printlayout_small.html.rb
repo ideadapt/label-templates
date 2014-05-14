@@ -83,6 +83,7 @@ TOP = <<-TOP
     .teaser{
     	float: left;
     	width: 50%;
+        max-height: 2.5cm;
     	margin-right: 1mm;
     	overflow: hidden;
     }
@@ -167,7 +168,67 @@ carts = [
         header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
         h1: 'Kürbis Roter Zentner',
         teaser: 'kuerbis-roter-zentner.png',
-        text: '<p>Grosse, gerippte Früchte mit orangefarbener Schale und Fruchtfleisch. Mittlere Lagerfähigkeit. Fruchtgewicht ca. 5 - 20 kg. Pflanzabstand: 1.5 - 2 x 1m. Nährstoffbedarf: hoch.</p>'
+        text: '<p>Grosse, gerippte Früchte mit orange- farbener Schale und Fruchtfleisch. Mittlere Lagerfähigkeit. Fruchtgewicht ca. 5 - 20 kg. Nährstoffbedarf: hoch.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Kürbis Jack be Little',
+        teaser: 'kuerbis-jack-be-little.png',
+        text: '<p>Faustgrosser oranger Kürbis mit unvergleichlichem Geschmack. Wird in Stücke geschnitten und gebraten oder im Ofen gebacken. Nährstoffbedarf: hoch.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Kürbis Bischofsmütze',
+        teaser: 'kuerbis-bischofsmuetze.png',
+        text: '<p>Durch charakteristische Form sehr dekorativ. Kann gegessen werden. Fruchtgewicht 1 - 1.5 kg. Nährstoffbedarf: mittel. Wärmebedarf: mittelhoch.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Kürbis Muscat',
+        teaser: 'kuerbis-muscat.png',
+        text: '<p>Dunkelgrüne, später beige-graue, gerippte Früchte und dunkeloranges Fruchtfleisch. Hervorragender Geschmack. Fruchtgewicht ca. 5 - 10 kg. Nährstoffbedarf: hoch.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Kürbis Rondini',
+        teaser: 'kuerbis-rondini.png',
+        text: '<p>Viele kleine, runde Früchte, die im jungen Zustand wie Zucchetti gegessen werden können. Fruchtgewicht 200 - 300 g. Aus der Familie der Kürbisgewächse. Nährstoffbedarf: mittel.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Kürbis Tetsukabuto',
+        teaser: 'kuerbis-tetsukabuto.png',
+        text: '<p>Wird ca. 2,5 kg schwer, nussig-delikater Geschmack. Gute Lagerfähigkeit. Zum Tiefkühlen geeignet. Können 3-4 Monate gelagert werden. Hoher Nährstoff- und Wasserbedarf, sonnigen Standort.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Melone Charentais',
+        teaser: 'melone-charentais.png',
+        text: '<p>Mittelgroße Melone mit glatter Haut. Das orangerote Fleisch ist sehr süß. Bei zeitiger Anzucht reifen die Früchte im August. Nährstoffreicher Boden und Kompostgaben von Vorteil.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Melone Gris de Rennes',
+        teaser: 'melone-gris-de-rennes.png',
+        text: '<p>Kleinere, 400 - 600g schwere, süße Früchte, die auch unter weniger warmen Bedingungen gut ausreifen. Frühreif und aromatisch.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Mini Gurke Patio Snack',
+        teaser: 'mini-gurke-patio-snack.png',
+        text: '<p>Die Mini-Gurke (erntereif ab ca. 8 cm). bildet viele schmack- haften Delikatessen. Sie ernten regelmäßig knackige, grün glän- zende Snackgurken in bester Qualität. So wird der Balkon zum vertikalen Gartenbeet.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Nostranogurke',
+        teaser: 'gurke-nostrano.png',
+        text: '<p>Kurze, kräftige Gurke mit leicht stacheliger Haut. Sie ist gut im Geschmack. Nährstoffreicher Boden, Kompost und Mulchdecke sind von Vorteil.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Wassermelone Rubin',
+        teaser: 'wassermelone-rubin.png',
+        text: '<p>Eine Wassermelone für Ihren Garten. Diese Sorte reift auch bei uns sicher aus. Benötigt reichen, durchlässigen Boden. Nährstoffreicher Boden und Kompostgaben von Vorteil.</p>'
     }
 ]
 
