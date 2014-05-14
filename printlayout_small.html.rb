@@ -162,6 +162,12 @@ carts = [
         h1: 'Kürbis Futsu Black',
         teaser: 'kuerbis-futsu-black.png',
         text: '<p>Kleinere, dunkelgrüne Früchte, später beige mit grauem Überzug. Orangefarbenes Fruchtfleisch. Sehr guter Geschmack, gut lagerfähig. Rankend. Fruchtgewicht ca. 1 - 2 kg. Nährstoffbedarf: mittel bis hoch.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Kürbis Roter Zentner',
+        teaser: 'kuerbis-roter-zentner.png',
+        text: '<p>Grosse, gerippte Früchte mit orangefarbener Schale und Fruchtfleisch. Mittlere Lagerfähigkeit. Fruchtgewicht ca. 5 - 20 kg. Pflanzabstand: 1.5 - 2 x 1m. Nährstoffbedarf: hoch.</p>'
     }
 ]
 
