@@ -133,17 +133,35 @@ CART = <<-EOF
 EOF
 
 carts = [
-	#{
-	#	header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
-	#	h1: 'Kürbis Butternut',
-	#	teaser: 'kuerbis-butternut.png',
-	#	text: '<p>Hellgelber, birnförmiger Kürbis mit kleinem Kerngehäuse. Aus- pflanzen ab 20. Mai (Achtung Schne- ckenfrass!) am Fuss des Komposthaufens oder in nährstoffreiche Erde.</p>'
-	#},
     {
         header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
         h1: 'Cocktailgurke',
         teaser: 'gemuese-cocktailgurke.png',
         text: '<p>Zahlreiche, oliven- große, dunkelgrüne Früchte. Die Gurken können frisch ge- gessen oder eingelegt werden. Ausreichend düngen, ev. mit Pflanzen- jauchen. Wärmeliebend.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Gurke Vorgebirgstraube',
+        teaser: 'gemuese-gurke-vorgebirgstraube.png',
+        text: '<p>Frühe, reichtragende Gewürz- Einlegegurke mit festem Fleisch. Kleine Früchte zum Einlegen als Cornichons, grössere als Senfgurken. Pflanzabstand: 100x50cm. Nährstoffbedarf: hoch.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Kletterzucchetti Black Forest',
+        teaser: 'gemuese-kletterzucchetti-black-forest.png',
+        text: '<p>"Black Forest" ist eine rankende Zucchini, geeignet für die Kulturführung am Pflanzstab. Enorm ertragreich bis zum Frost. Wuchshöhe bis zu 2m. Hoher Nährstoffbedarf.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Kürbis Butternut',
+        teaser: 'kuerbis-butternut.png',
+        text: '<p>Hellgelber, birnförmiger, nussig delikater Kürbis. Pflanzabständ 80-100 cm allseitig, nährstoffreiche Erde. Er lässt sich über Monate lagern und entwickelt nach ca. 3 Monaten sein bestes Aroma. Lagerung bei mind. 15°C.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Kürbis Futsu Black',
+        teaser: 'kuerbis-futsu-black.png',
+        text: '<p>Kleinere, dunkelgrüne Früchte, später beige mit grauem Überzug. Orangefarbenes Fruchtfleisch. Sehr guter Geschmack, gut lagerfähig. Rankend. Fruchtgewicht ca. 1 - 2 kg. Nährstoffbedarf: mittel bis hoch.</p>'
     }
 ]
 
