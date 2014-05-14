@@ -229,6 +229,30 @@ carts = [
         h1: 'Wassermelone Rubin',
         teaser: 'wassermelone-rubin.png',
         text: '<p>Eine Wassermelone für Ihren Garten. Diese Sorte reift auch bei uns sicher aus. Benötigt reichen, durchlässigen Boden. Nährstoffreicher Boden und Kompostgaben von Vorteil.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Wassermelone Small Shining Light',
+        teaser: 'wassermelone-small-shining-light.png',
+        text: '<p>Wassermelone mit ca. 30 cm großen, runden Früchten. Sehr dunkle Schale mit süßem rotem Fleisch. Früh reifende Sorte, für unsere Gärten absolut empfehlenswert!</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Zierkürbis Mix',
+        teaser: 'zierkuerbis-mix.png',
+        text: '<p>Einzigartige relativ kleine dekorative Früchte mit langem Hals oder farbigen Warzen und Graten. Benötigen warmen Standort, hoher Nährstoff- und Wasserbedarf.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Zucchetti Verte de Maraicher',
+        teaser: 'zucchetti-verte-de-maraicher.png',
+        text: '<p>Ältere Sorte aus dem Genfersee Gebiet. Pflanzabstand: 100 x 75 cm. Nährstoffbedarf: hoch. Wärmebedarf hoch.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Zucchetti Runde von Nizza',
+        teaser: 'zucchetti-runde-von-nizza.png',
+        text: '<p>Pflanze mit runden, hellgrünen Früchten, die jung geerntet werden sollten (Tennisballgrösse). Ca. 500g bis 1,5 kg, begrenzt lagerfähig. Nährstoffbedarf: hoch.</p>'
     }
 ]
 
