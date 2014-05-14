@@ -47,7 +47,7 @@ TOP = <<-TOP
     	padding: 0;
     	padding-top: 3.5mm;
     	margin: 0;
-    	text-align: justify;
+    	text-align: left;
     }
     .row-2.etikett>article{
     	padding-top: 4.7mm;
@@ -77,10 +77,6 @@ TOP = <<-TOP
     .icon.bio{
     	width: 0.5cm;
     }
-    em{
-    	font-weight: bold;
-    	font-style: normal;
-    }
     .logo{
     	width: 2.5cm;
     }
@@ -94,7 +90,7 @@ TOP = <<-TOP
     	width: 100%;
     }
     .teaser~p{
-    	margin-top: 0.2cm;
+    	margin-top: 0;
     	margin-bottom: 0;
     	padding-bottom: 0;
     	padding-top: 0;
@@ -102,15 +98,13 @@ TOP = <<-TOP
     h1{
     	text-align: center;
     	margin-top: 0.1cm;
-    	margin-bottom: 0.1cm;
+    	margin-bottom: 0.3cm;
     	font-size: 10pt;
     }
-    em+span{
-    	float: right;
-    	display: inline-block;
-    }
     small{
+        float: right;
     	padding-left: 1mm;
+        padding-top: 2mm;
     	margin-bottom: 0.2cm;
     	font-size: 6pt;
     }
@@ -139,12 +133,18 @@ CART = <<-EOF
 EOF
 
 carts = [
-	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
-		h1: 'Kürbis Butternut',
-		teaser: 'kuerbis-butternut.png',
-		text: '<p>Hellgelber, birnförmiger Kürbis mit kleinem Kerngehäuse. Aus- pflanzen ab 20. Mai (Achtung Schne- ckenfrass!) am Fuss des Komposthaufens oder in nährstoffreiche Erde.</p>'
-	}
+	#{
+	#	header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+	#	h1: 'Kürbis Butternut',
+	#	teaser: 'kuerbis-butternut.png',
+	#	text: '<p>Hellgelber, birnförmiger Kürbis mit kleinem Kerngehäuse. Aus- pflanzen ab 20. Mai (Achtung Schne- ckenfrass!) am Fuss des Komposthaufens oder in nährstoffreiche Erde.</p>'
+	#},
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Cocktailgurke',
+        teaser: 'gemuese-cocktailgurke.png',
+        text: '<p>Zahlreiche, oliven- große, dunkelgrüne Früchte. Die Gurken können frisch ge- gessen oder eingelegt werden. Ausreichend düngen, ev. mit Pflanzen- jauchen. Wärmeliebend.</p>'
+    }
 ]
 
 # tomaten , zuccetti, gurken, kürbis
