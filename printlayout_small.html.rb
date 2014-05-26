@@ -138,10 +138,10 @@ carts = [
         header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
         h1: 'Cocktailgurke',
         teaser: 'gemuese-cocktailgurke.png',
-        text: '<p>Zahlreiche, oliven- große, dunkelgrüne Früchte. Die Gurken können frisch ge- gessen oder eingelegt werden. Ausreichend düngen, ev. mit Pflanzen- jauchen. Wärmeliebend.</p>'
+        text: '<p>Zahlreiche, oliven- große, dunkelgrüne Früchte. Die Gurken können frisch ge- gessen oder eingelegt werden. Ausreichend düngen, ev. mit Pflanzenjauchen. Wärmeliebend.</p>'
     },
     {
-        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
         h1: 'Gurke Vorgebirgstraube',
         teaser: 'gemuese-gurke-vorgebirgstraube.png',
         text: '<p>Frühe, reichtragende Gewürz- Einlegegurke mit festem Fleisch. Kleine Früchte zum Einlegen als Cornichons, grössere als Senfgurken. Pflanzabstand: 100x50cm. Nährstoffbedarf: hoch.</p>'
@@ -253,6 +253,30 @@ carts = [
         h1: 'Zucchetti Runde von Nizza',
         teaser: 'zucchetti-runde-von-nizza.png',
         text: '<p>Pflanze mit runden, hellgrünen Früchten, die jung geerntet werden sollten (Tennisballgrösse). Ca. 500g bis 1,5 kg, begrenzt lagerfähig. Nährstoffbedarf: hoch.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" /><img src="../icon-bio.jpeg" class="icon bio" />',
+        h1: 'Zuckermelone Ancien',
+        teaser: 'melone-ancien.png',
+        text: '<p><strong>Zuckersüsse, saftige und aromatische Früchte.</strong></p><p>Reifen am warmen Standort auch in unserem Klima. Die rankenden Pflanzen müssen nicht aus- geschnitten werden.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" /><img src="../icon-bio.jpeg" class="icon bio" />',
+        h1: 'Kürbis oranger Knirps',
+        teaser: 'kuerbis-oranger-knirps.png',
+        text: '<p>Süsses Karroten-, Marroni- und Kartof- felaroma, sehr delikat! Für Suppen, zum Anbraten, Kuchen, Gratins, Pures und Aufläufe. Kann mit der Schale gegessen werden! Lagerdauer 5-6 Monate.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Melone süsses Wunder',
+        teaser: 'melone-suesses-wunder.png',
+        text: '<p>Eine besonders frühreife Sorte, die mit Sicherheit ausreift. Auf schwarze Folie pflanzen, Melonen in ein Netz legen, damit sie nicht herunterfallen oder auf eine Kiste legen.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" /><img src="../icon-bio.jpeg" class="icon bio" />',
+        h1: 'Salatgurke Marketmore',
+        teaser: 'salatgurke-marketmore.png',
+        text: '<p>Sehr robuste, bitterfreie Salatgurke Slicertyp mit dunkelgrünen, 20 - 25 cm langen, glatten Früchten. Für gedeckten- und Freilandanbau. Widerstandsfähig gegen verschiedene Gurkenkrankheiten.</p>'
     }
 ]
 
