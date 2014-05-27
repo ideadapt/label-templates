@@ -277,6 +277,12 @@ carts = [
         h1: 'Salatgurke Marketmore',
         teaser: 'salatgurke-marketmore.png',
         text: '<p>Sehr robuste, bitterfreie Salatgurke Slicertyp mit dunkelgrünen, 20 - 25 cm langen, glatten Früchten. Für gedeckten- und Freilandanbau. Widerstandsfähig gegen verschiedene Gurkenkrankheiten.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" /><img src="../icon-bio.jpeg" class="icon bio" />',
+        h1: 'Zucchetti Golden Butter',
+        teaser: 'zucchetti-golden-butter.png',
+        text: '<p>Hübsch gelb ist er. Er soll möglichst jung geerntet werden (10 cm), dann ist er butterzart. Die vielen grossen, männlichen Blüten eignen sich -im Bierteig gewendet- vorzüglich zum Fritieren. Pflanzabstand 80-100 cm allseitig.</p>'
     }
 ]
 
