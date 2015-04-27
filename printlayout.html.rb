@@ -359,7 +359,13 @@ carts = [
 		h1: 'Aubergine Pingtung Long',
 		teaser: 'aubergine-pingtung-long.png',
 		text: '<p>Sehr schöne Aubergine die aus der Stadt Pingtung in Taiwan stammt. Die schlanken Früchte werden mindestens 30 cm lang und haben einen herrlich milden Geschmack und zartes Fruchtfleisch. Die Pflanze ist sehr kraftvoll und krankheits- resistent. Eine fantastische Aubergine, nicht nur für die orientalische Küche!</p>'
-	}
+	},
+	{
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
+        h1: 'Königin der Frühen',
+        teaser: 'tomate-koenigin-der-fruehen.png',
+        text: '<p>Flachrunde feine und süsse Salattomate. An Pfählen oder Schnüren aufbinden und einige Seitentriebe ausbrechen. Regendach empfehlenswert. Fruchtgrösse 50-200 Gramm. Ernte Juli &ndash; Okt.</p>'
+    }
 ]
 
 # tomaten , zuccetti, gurken, kürbis
