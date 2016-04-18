@@ -67,6 +67,10 @@ TOP = <<-TOP
     .icon.bio{
     	width: 0.75cm;
     }
+    .icon.demeter{
+    	margin-top: 0.25cm;
+    	width: 0.75cm;
+    }
     em{
     	font-weight: bold;
     	font-style: normal;
@@ -152,7 +156,7 @@ carts = [
 		text: '<p>Die Pflanzen bleiben gedrungen und kompakt und bilden kleine, schön geformte Früchte, die von orange-rot bis gelb abreifen. In geringen Mengen verwendet, verleihen sie jedem Gericht eine angenehme und einzigartige exotische Schärfe.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-bio.png" class="icon bio" />',
 		h1: 'Chili Criolla Sella',
 		teaser: 'chili-criolla-sella.png',
 		hot: '8',
@@ -173,11 +177,18 @@ carts = [
 		text: '<p>Hat einen reichen, leicht scharfen, rauchigen Geschmack. Die Früchte reifen von dunkelgrün zu dunkelbraun ab. Die Früchte sind 15cm bis 30cm lang und 3 bis 4cm breit. Von der Form her länglich und leicht unregelmäßig.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-bio.png" class="icon bio" />',
 		h1: 'Chili Red Cap Mushroom',
 		teaser: 'chili-red-cap-mushroom.png',
 		hot: '4',
 		text: '<p>Diese kuriose Chili trägt abgeflachte glockenförmige Früchte, welche von hellgrün zu leuchtend rot ausreifen. Schönes, scharf-fruchtiges Aroma, ideal zum Einlegen oder Trocknen. Ein echter Hingucker!</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-bio.png" class="icon bio" />',
+		h1: 'Chili Corno Di Bue Giallo',
+		teaser: 'chili-corno-di-bue-giallo.png',
+		hot: '4',
+		text: '<p>Sehr süsse lange starkwachsende Peperonisorte. Sie färbt von grün nach gelb nach.</p>'
 	},
 	{
 		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
@@ -208,7 +219,7 @@ carts = [
 		text: '<p>Ideal für Topfkultur oder Gewächshaus. Die dickwandigen kleinen Blockfrüchte sind aromatisch und saftig, eine farbliche und kulinarische Bereicherung.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		header: '<img src="../icon-demeter.png" class="icon demeter" /><img src="../icon-bio.png" class="icon bio" />',
 		h1: 'Cherry Zuckertraube',
 		teaser: 'cherry-zuckertraube.png',
 		text: '<p>Kleine, aromatische Delikatesse für den regengeschützten Anbau. Sie hat lange Trauben und einen starken Wuchs. Kann auch mehrtriebig gezogen werden. Sehr hoher und früher Ertrag. Geeignet für den Garten und Kübelanbau. Gezogen aus Demeter Samen.</p>'
@@ -218,6 +229,18 @@ carts = [
 		h1: 'Aubergine Striped Toga',
 		teaser: 'aubergine-striped-toga.png',
 		text: '<p>Exotisch anmutende, gestreifte Aubergine. Diese kuriose Aubeginensorte wechselt zur Reife ihre Farbe von verschiedenen Grüntönen zu einem leuchtenden Orange mit grünen Flammen. Aromatische 8cm lange Früchte, und nicht bitter.</p>'
+	},
+	{
+		header: '<img src="../icon-psr.png" class="icon psr" /><img src="../icon-bio.png" class="icon bio" /><img src="../icon-demeter.png" class="icon demeter" />',
+		h1: 'Birnenförmige Gelbe',
+		teaser: 'tomate-birnenfoermige-gelbe.png',
+		text: '<p>Die kleinen birnenförmigen Früchte sind nicht nur eine Augenweide, sondern auch wunderbar im Geschmack. Liebhabersorte. Üppig wachsende Pflanze. Vom Juli bis inden Herbst reiche Ernte. Auch für Balkonkultur.</p>'
+	},
+	{
+		header: '<img src="../icon-psr.png" class="icon psr" /><img src="../icon-bio.png" class="icon bio" /><img src="../icon-demeter.png" class="icon demeter" />',
+		h1: 'Green Grape',
+		teaser: 'tomate-green-grape.png',
+		text: '<p>Die Green Grape ist eine kleine, gelblich-grüne Tomate mit feinem Geschmack. Sie hat ein beschränktes Längenwachstum. Wärmebedarf sehr hoch, gedeckter Platz von Vorteil.</p>'
 	},
 	{
 		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
@@ -259,7 +282,7 @@ carts = [
 		text: '<p>Diese Paprika-Pflanze liefert enorme Mengen länglicher, gelb abreifender Paprikas. Die Früchte sind unheimlich aromatisch und süss. Zum Einlegen, grillen, in Gemüsegerichten, in Fleisch-gerichten und Salat.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
+		header: '<img src="../icon-psr.png" class="icon psr" /><img src="../icon-bio.png" class="icon bio" /><img src="../icon-demeter.png" class="icon demeter" />',
 		h1: 'Reisetomate',
 		teaser: 'reisetomate.png',
 		text: '<p>Historische Indianer-Tomate, deren verschachtelte Früchte sich in einzelne Segmente (Teifrüchte) teilen lassen, ohne dass dabei Saft oder Samen austritt. Gut für auf Reisen! Rarität! Diese Reise-Tomate zeichnet sich durch saftig-aromatische Früchte aus.</p>'
@@ -283,7 +306,7 @@ carts = [
 		text: '<p>Gigantische Früchte! Die dunkelrosa- farbigen, faltigen Früchte sind sehr süss, mit einer feinen Säurekomponente. Dies ergibt einen angenehmen guten Ge-schmack. Die meisten Früchte wiegen zwischen 500 und1000 Gramm, aber es ist nicht ungewöhnlich auch mal eine Mammutausgabe von 1,4 Kg zu ernten.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
+		header: '<img src="../icon-psr.png" class="icon psr" /><img src="../icon-bio.png" class="icon bio" /><img src="../icon-demeter.png" class="icon demeter" />',
 		h1: 'Tomate Green Zebra',
 		teaser: 'tomate-green-zebra.png',
 		text: '<p>Sehr geschmackvolle Früchte, die hell- und dunkelgrün gestreift sind. Die Früchte werden bei der Reife gelblich. Stark wachsende Pflanzen. Ihr Geschmack wird als hervorragend ausgeglichen mit einem eher niedrigen Säuregehalt beschrieben. Die Früchte sind mittelgross und wiegen zwischen 80 und 120 Gramm. Eine wahre Delikatesse!</p>'
@@ -295,7 +318,7 @@ carts = [
 		text: '<p>Absolute Schönheit unter den Tomaten! Für Salate und kalte Platten optimal. Die schönen gelben Früchte sind rot gestreift am unteren Ende und werden um die 300 Gramm schwer. Sie sind herrlich süss und saftig.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
+		header: '<img src="../icon-psr.png" class="icon psr" /><img src="../icon-bio.png" class="icon bio" /><img src="../icon-demeter.png" class="icon demeter" />',
 		h1: 'Tomate Ochsenherz',
 		teaser: 'tomate-ochsenherz.png',
 		text: '<p>Die Fleischtomate Ochsenherz ist eine sehr große und aromatische Sorte. Die Früchte werden sehr groß, bis zu 500 g schwer, sind stark gerippt, sehr fleischig und ähneln teilweise einem Ochsen-herzen.</p>'
@@ -313,25 +336,25 @@ carts = [
 		text: '<p>Die Russische Orange ist eine zweifarbige Ochsenherz-Tomate, und zeigt die besten Eigenschaften beider Arten. Trägt herzförmige Früchte mit einem Gewicht von bis zu 230 Gramm. Sie ist wunderschön marmoriert mit roten Farbstreifen und schmeckt köstlich süss und fruchtig im Geschmack.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
+		header: '<img src="../icon-psr.png" class="icon psr" /><img src="../icon-bio.png" class="icon bio" /><img src="../icon-demeter.png" class="icon demeter" />',
 		h1: 'Tomate Zürcher Original',
 		teaser: 'tomate-zuercher-original.png',
 		text: '<p>Rote Fleischtomate, flachrund, gerippt, fest, guter Geschmack und vollfleischig Erinnert im Querschnitt oft an ein Kleeblatt.</p><p>Ernte: Juli bis September.<br/>Gezogen aus Demeter Samen.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-psr.png" class="icon psr" />',
 		h1: 'Jap. Trifele Black Tomato',
 		teaser: 'tomate-trifele-black.png',
 		text: '<p>Eine der besten russischen, schwarzen Tomaten. Erwarten Sie eine grosse Ernte der birnenförmigen Früchte mit reichem vollem Geschmack.</p><p>Kartoffelblättrige Sorte mit 100 bis 150 Gramm schweren Früchten. Erntezeit Juli bis Oktober.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		header: '<img src="../icon-psr.png" class="icon psr" /><img src="../icon-bio.png" class="icon bio" /><img src="../icon-demeter.png" class="icon demeter" />',
 		h1: 'Tomate Black Zebra',
 		teaser: 'tomate-black-zebra.png',
 		text: '<p>Saftige, wohlschmeckende, süsse rote Früchte mit Längsstreifen. Diese Sorte gehört zu den schönsten Sorten der Welt. Die Früchte sind von einem dunklen rot-braun mit grünen Streifen. Die runden, abgeflachten Früchte werden bis 200 Gramm schwer, gut lagerfähig.<br/>Gezogen aus Demeter Samen.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-bio.jpeg" class="icon bio" />',
+		header: '<img src="../icon-demeter.png" class="icon demeter" /><img src="../icon-bio.png" class="icon bio" />',
 		h1: 'Tomate Sibirische Frühe',
 		teaser: 'tomate-sibirische-fruehe.png',
 		text: '<p>Die Tomate, die aus der Kälte kommt und bereits Ende Juni reift und auch auf dem Balkon gedeiht. Die Grösse der Frucht variiert von klein bis mittel. Das Fruchtfleisch ist fest und sehr aromatisch. Kann gut im Topf kultiviert werden.</p>'
@@ -343,7 +366,7 @@ carts = [
 		text: '<p>Die sonnenabgewandte Seite ist anfänglich grün und färbt sich während der Reife hin nach rot. Erhält an der sonnenzugewandten Seite eine indigoblaue Farbe. Das Tomatenfleisch selbst hat einen roten Farbton. Ertrag sehr produktiv. Sie hat einen guten Geschmack und die Pflanzen sind robust und resistent.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
+		header: '<img src="../icon-psr.png" class="icon psr" /><img src="../icon-bio.png" class="icon bio" /><img src="../icon-demeter.png" class="icon demeter" />',
 		h1: 'Tomate Berner Rose',
 		teaser: 'tomate-berner-rose.png',
 		text: '<p>Späte, fleischige und schmackhafte, leicht süsse Früchte. Viel Tomatenaroma. Die Früchte sind rosarot und saftig-weich. Ihre Fruchtform ist uneinheitlich, mal groß wie eine Fleischtomate, mal klein wie eine normale Obsttomate. Eine der besten Tomaten!<br/>Gezogen aus Demeter Samen.</p>'
@@ -361,7 +384,13 @@ carts = [
 		text: '<p>Sehr schöne Aubergine die aus der Stadt Pingtung in Taiwan stammt. Die schlanken Früchte werden mindestens 30 cm lang und haben einen herrlich milden Geschmack und zartes Fruchtfleisch. Die Pflanze ist sehr kraftvoll und krankheits- resistent. Eine fantastische Aubergine, nicht nur für die orientalische Küche!</p>'
 	},
 	{
-        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-prospezierara.png" class="icon psr" />',
+		header: '<img src="../icon-psr.png" class="icon psr" /><img src="../icon-bio.png" class="icon bio" /><img src="../icon-demeter.png" class="icon demeter" />',
+		h1: 'Aubergine Rotonda Sfumata',
+		teaser: 'aubergine-rotonda-sfumata.png',
+		text: '<p>Mit vollen Namen heisst sie ROTONDA BIANCA SFUMATON DI ROSA. Ertragreiche und wüchsige Sorte mit runden, hellen, rosafarben überlaufenen Früchten. Festes Fruchtfleisch mit wenig Samen und gutem Geschmack. Aus der Familie der Nachtschattengewächse.</p>'
+	},
+	{
+        header: '<img src="../icon-demeter.png" class="icon demeter" /><img src="../icon-bio.png" class="icon bio" />',
         h1: 'Königin der Frühen',
         teaser: 'tomate-koenigin-der-fruehen.png',
         text: '<p>Flachrunde feine und süsse Salattomate. An Pfählen oder Schnüren aufbinden und einige Seitentriebe ausbrechen. Regendach empfehlenswert. Fruchtgrösse 50-200 Gramm. Ernte Juli &ndash; Okt.</p>'
@@ -371,17 +400,28 @@ carts = [
 # tomaten , zuccetti, gurken, kürbis
 
 start_index = 0
+teaser_filter = nil
+no_open = nil
 ARGV.each do |arg|
 	name, value = arg.split('=')
 	if name == '-start'
 		start_index = value.to_i
 		start_index = carts.length + start_index if start_index < 0
 	end
+
+	if name == '-teaser'
+		teaser_filter = value
+	end
+
+	if name == '-no-open'
+		no_open = true
+	end
 end
-puts "Starting at #{start_index+1} out of #{carts.length}"
+puts "Starting at #{start_index+1} out of #{carts.length}, with teaser filter #{teaser_filter}"
 
 carts.each_with_index do |cart, i|
 	next if i < start_index
+	next if teaser_filter and not cart[:teaser].include? teaser_filter
 
 	filename = cart[:h1].gsub(/\s+/, '-').downcase
 
@@ -420,7 +460,7 @@ carts.each_with_index do |cart, i|
 	puts "Generating #{filename}.pdf"
 	`wkhtmltopdf --quiet -O landscape -s A4 -B 4.2mm -R 4.2mm -L 4.5mm -T 4.2mm ./out/tmp.html ./out/#{filename}.pdf`
 
-	`open ./out/#{filename}.pdf`
+	`open ./out/#{filename}.pdf` unless no_open
 end
 
 
