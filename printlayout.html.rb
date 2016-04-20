@@ -150,6 +150,13 @@ carts = [
 	},
 	{
 		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+		h1: 'Chili Red Habanero',
+		teaser: 'chili-red-habanero.png',
+		hot: '10',
+		text: '<p>Die dünnwandigen Früchte sind rund, faltig und werden ca. 5cm lang und 3cm dick. Intensiv fruchtiges Aroma, ein Muss für jede Salsa. Harmoniert gut mit tropischen Früchten. Ihre Farbe wechselt von hellgrün nach rot (manchmal orange). Sehr ertragreich!</p>'
+	},
+	{
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
 		h1: 'Paprika Hot Fire',
 		teaser: 'paprika-hot-fire.png',
 		hot: '9',
@@ -187,7 +194,7 @@ carts = [
 		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-bio.png" class="icon bio" />',
 		h1: 'Chili Corno Di Bue Giallo',
 		teaser: 'chili-corno-di-bue-giallo.png',
-		hot: '4',
+		hot: '0',
 		text: '<p>Sehr süsse lange starkwachsende Peperonisorte. Sie färbt von grün nach gelb nach.</p>'
 	},
 	{
@@ -218,6 +225,20 @@ carts = [
 		hot: '0',
 		text: '<p>Ideal für Topfkultur oder Gewächshaus. Die dickwandigen kleinen Blockfrüchte sind aromatisch und saftig, eine farbliche und kulinarische Bereicherung.</p>'
 	},
+	{
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Chili Jalapeño',
+        teaser: 'chili-jalapeno.png',
+        hot: '5',
+        text: '<p>Ein mexikanischer Chili-Klassiker der bis zu 7,5cm lange, sehr saftige, fleischige Früchte bildet die lange grün bleiben, aber sogar in unseren Breiten schlussendlich rot abreifen.</p>'
+    },
+    {
+        header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-34.png" class="icon can" />',
+        h1: 'Chili Mulato Isleno',
+        teaser: 'chili-mulato-isleno.png',
+        hot: '4',
+        text: '<p>Eine leichte scharfe Chili vom Poblanotyp. Dieser grosse herzförmige Chili reift von Grün zu Schoggi-Braun ab. Eine exzellente Wahl für Salsas, Grill und zum Füllen!</p>'
+    },
 	{
 		header: '<img src="../icon-demeter.png" class="icon demeter" /><img src="../icon-bio.png" class="icon bio" />',
 		h1: 'Cherry Zuckertraube',
@@ -387,7 +408,7 @@ carts = [
 		header: '<img src="../icon-psr.png" class="icon psr" /><img src="../icon-bio.png" class="icon bio" /><img src="../icon-demeter.png" class="icon demeter" />',
 		h1: 'Aubergine Rotonda Sfumata',
 		teaser: 'aubergine-rotonda-sfumata.png',
-		text: '<p>Mit vollen Namen heisst sie ROTONDA BIANCA SFUMATON DI ROSA. Ertragreiche und wüchsige Sorte mit runden, hellen, rosafarben überlaufenen Früchten. Festes Fruchtfleisch mit wenig Samen und gutem Geschmack. Aus der Familie der Nachtschattengewächse.</p>'
+		text: '<p>Mit vollen Namen heisst sie rotonda bianca sfumata di rosa. Ertragreiche und wüchsige Sorte mit runden, hellen, rosafarben überlaufenen Früchten. Festes Fruchtfleisch mit wenig Samen und gutem Geschmack. Aus der Familie der Nachtschattengewächse.</p>'
 	},
 	{
         header: '<img src="../icon-demeter.png" class="icon demeter" /><img src="../icon-bio.png" class="icon bio" />',
