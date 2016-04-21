@@ -191,7 +191,7 @@ carts = [
 		text: '<p>Diese kuriose Chili trägt abgeflachte glockenförmige Früchte, welche von hellgrün zu leuchtend rot ausreifen. Schönes, scharf-fruchtiges Aroma, ideal zum Einlegen oder Trocknen. Ein echter Hingucker!</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-bio.png" class="icon bio" />',
+		header: '<img src="../icon-psr.png" class="icon psr" /><img src="../icon-bio.png" class="icon bio" /><img src="../icon-demeter.png" class="icon demeter" />',
 		h1: 'Chili Corno Di Bue Giallo',
 		teaser: 'chili-corno-di-bue-giallo.png',
 		hot: '0',
