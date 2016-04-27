@@ -363,7 +363,7 @@ carts = [
 		text: '<p>Rote Fleischtomate, flachrund, gerippt, fest, guter Geschmack und vollfleischig Erinnert im Querschnitt oft an ein Kleeblatt.</p><p>Ernte: Juli bis September.<br/>Gezogen aus Demeter Samen.</p>'
 	},
 	{
-		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" /><img src="../icon-psr.png" class="icon psr" />',
+		header: '<img src="../icon-sun.png" class="icon sun" /><img src="../icon-can-44.png" class="icon can" />',
 		h1: 'Jap. Trifele Black Tomato',
 		teaser: 'tomate-trifele-black.png',
 		text: '<p>Eine der besten russischen, schwarzen Tomaten. Erwarten Sie eine grosse Ernte der birnenförmigen Früchte mit reichem vollem Geschmack.</p><p>Kartoffelblättrige Sorte mit 100 bis 150 Gramm schweren Früchten. Erntezeit Juli bis Oktober.</p>'
